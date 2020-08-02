@@ -1,7 +1,7 @@
 """
 File name: pricing.py
 Author: Salma Bouzid
-		salma.bouzid@usherbrooke.ca
+	salma.bouzid@usherbrooke.ca
 Date created: 02/08/2020
 """
 
