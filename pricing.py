@@ -18,10 +18,10 @@ class Instrument(Resource):
 	def get(self):
 		url = "https://apidojo-yahoo-finance-v1.p.rapidapi.com/stock/v2/get-historical-data"
 		querystring = {"frequency":"1m", #The increment step
-						"filter":"history",
-						"period1":"1546448400", #The start date in epoch timestamp
-						"period2":"1562086800", #The end date in epoch timestamp
-						"symbol":"AMRN"} #The specified instrument to get the pricing for
+				"filter":"history",
+				"period1":"1546448400", #The start date in epoch timestamp
+				"period2":"1562086800", #The end date in epoch timestamp
+				"symbol":"AMRN"} #The specified instrument to get the pricing for
 		headers = {
 			'x-rapidapi-host': RAPIDAPI_HOST,
 			'x-rapidapi-key': RAPIDAPI_KEY
@@ -42,7 +42,7 @@ class Instrument_Pricing(Resource):
 		response = requests.request("GET", url, headers=headers, params=querystring)
 		data = json.loads(response.text)
 		return jsonify(data['price']['regularMarketPrice']) #To get the specific regular Market Price
-		#return jsonify(data['price']['regularMarketPrice']) #To get all the information of pricing for the instrument
+		#return jsonify(data['price']) #To get all the information of pricing for the instrument
 
 
 api.add_resource(Instrument, '/') # Route_1
