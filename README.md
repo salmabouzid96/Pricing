@@ -9,7 +9,7 @@ https://rapidapi.com/apidojo/api/yahoo-finance1/pricing
 - Replace the RAPID KEY AND HOST by yours in the API script.
 
 # How to run
-1- Clone the project 
+1- Clone the project     
 2- Create a virtual environment and install the packages needed after its activation
 ```
 $ virtualenv venv
@@ -30,7 +30,7 @@ python pricing.py
  # Functionalities
  - Connects to "Yahoo Finance API Pricing".
  - 127.0.0.1:port/ provides you with an instrument's pricing specified through the python API (in the params of your request).
- - 127.0.0.1:port/instrument provides you with a specific instrument's prcing that is specified by the user via the terminal through 'Enter the stock symbol'.
+ - 127.0.0.1:port/instrument provides you with a specific instrument's pricing that is specified by the user via the terminal through 'Enter the stock symbol'.
  
  # Development environment
 * Python = 3.7
